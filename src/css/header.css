@@ -1,5 +1,3 @@
-
-
 .page-header {
   position: absolute;
   width: 100%;
@@ -24,13 +22,25 @@
 }
 
 .logo {
-  color: #FAFAFA;
+  color: #fafafa;
+}
+
+.logo:active {
+  color: #e0373f;
+}
+
+.header-button:active {
+  background-color: #e0373f;
+}
+
+.menu-link:active {
+  color: #e0373f;
 }
 
 @media screen and (max-width: 767px) {
   .menu-button {
     border: none;
-    stroke: #FAFAFA;
+    stroke: #fafafa;
     background-color: transparent;
     line-height: 0;
   }
@@ -44,6 +54,8 @@
   }
 }
 
+/* ---------------------------------------------TABLET--------------------------------------------------*/
+
 @media screen and (min-width: 768px) {
   .header-container {
     max-width: 704px;
@@ -55,7 +67,7 @@
   }
 
   .menu-link {
-    color: #FAFAFA;
+    color: #fafafa;
     text-decoration: underline;
     padding: 10px;
     width: 60px;
@@ -68,31 +80,33 @@
     padding: 18px 24px;
     width: 163px;
     height: 55px;
-    color: #FAFAFA;
+    color: #fafafa;
     background-color: #ed3b44;
+    letter-spacing: -0.02em;
+    font-size: 15px;
   }
 
-  .header-button:active {
-    background-color: #E0373F;
-  }
-
-  .menu-link:active {
-    color: #E0373F;
-  }
 }
+
+/* ------------------------------------------------------------DESKTOP---------------------------------*/
 
 @media screen and (min-width: 1440px) {
   .header-container {
     max-width: 1376px;
   }
 
+  .logo:hover,
+  .logo:focus {
+    color: #e0373f;
+  }
+
   .menu-link:hover,
   .menu-link:focus {
-    color: #E0373F;
+    color: #e0373f;
   }
 
   .header-button:hover,
   .header-button:focus {
-    background-color: #E0373F;
+    background-color: #e0373f;
   }
 }
