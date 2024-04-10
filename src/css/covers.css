@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.covers-heading {
+  display: none;
+}
+
+.covers-wrapper {
+  max-width: 100%;
+  height: 100vh;
+  position: absolute;
+  right: -800px; 
+  left: 0;
+  overflow: hidden;
+  background-image: url(../img/covers-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.covers-section {
+  position: relative;
+}
+
+.covers-slide-list {
+  display: flex;
+  gap: 30px;
+  transform: rotate(16deg);
+  margin-top: 30px;
+}
+
+.covers-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 260px;
+  height: 160px;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-260px);
+  }
+  
+  to {
+    transform: translateX(-520px); 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers-slide {
+    max-width: 544px;
+    height: 314px;
+  }
+}
