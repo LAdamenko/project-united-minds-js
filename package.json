@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "project-united-minds-js",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/project-united-minds-js/",
     "preview": "vite preview"
   },
   "devDependencies": {
