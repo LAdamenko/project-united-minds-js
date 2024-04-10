@@ -1,6 +1,4 @@
-.container {
-  background-color:black;
-}
+
 
 .page-header {
   position: absolute;
@@ -17,6 +15,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 0 16px;
+  background-color: transparent;
 }
 
 .logo-container {
@@ -31,7 +30,7 @@
 @media screen and (max-width: 767px) {
   .menu-button {
     border: none;
-    stroke: #1b414b;
+    stroke: #FAFAFA;
     background-color: transparent;
     line-height: 0;
   }
