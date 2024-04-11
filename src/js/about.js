@@ -35,7 +35,7 @@ import { Keyboard, Mousewheel } from 'swiper/modules';
 // })
 
 
-// const swiper = new Swiper('.swiper', {
+// const swiper = new Swiper('.swiper-about', {
 //   modules: [Keyboard, Mousewheel],
 //   speed: 400,
 //   spaceBetween: 0,
