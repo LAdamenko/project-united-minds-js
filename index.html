@@ -12,7 +12,7 @@
       rel="stylesheet">
     
     <script type="module" crossorigin src="/project-united-minds-js/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-united-minds-js/assets/index-b6a24e23.css">
+    <link rel="stylesheet" href="/project-united-minds-js/assets/index-dc4b4629.css">
   </head>
   <body>
     
@@ -31,7 +31,7 @@
       <picture>
         <source srcset="../img/about/img.jpg 1x, ../img/about/img@2x.jpg 2x" media="(min-width: 1440px)" />
 
-        <source srcset="../img/about/img-tab.jpg1x, ../img/about/img-tab@2x.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="../img/about/img-tab.jpg 1x, ../img/about/img-tab@2x.jpg 2x" media="(min-width: 768px)" />
 
         <source srcset="../img/about/img-mob.jpg 1x, ../img/about/img-mob@2x.jpg 2x" media="(max-width: 768px)" />
 
@@ -39,17 +39,17 @@
       </picture>
     </div>
     <div class="text-about-container">
-      <ul class="list-about">
+      <ul class="list-about accordion-container">
         <li class="item-about">
           <div class="head-cv-about-container">
             <h3 class="small-title-about">About me</h3>
             <button type="button" class="btn-about" id="btn-about">
-              <svg class="icon-open" width="20" height="20">
+              <svg class="icon-open">
                 <use href="../img/about/icons-about.svg#icon-btn"></use>
               </svg>
             </button>
           </div>
-          <div class="text-cv-about-container">
+          <div class="text-cv-about-container accordion-first">
             <p class="paragraph-about gap">I am Lloyd Jefferson, a talented programmer with extensive expertise in
               software development. I have an understanding
               of
@@ -77,12 +77,12 @@
           <div class="head-cv-about-container">
             <h3 class="small-title-about">Role</h3>
             <button type="button" class="btn-about" id="btn-role">
-              <svg class="icon-close" width="20" height="20">
+              <svg class="icon-close">
                 <use href="../img/about/icons-about.svg#icon-btn"></use>
               </svg>
             </button>
           </div>
-          <div class="text-cv-about-container">
+          <div class="text-cv-about-container accordion-second">
             <ul class="list-cv-about">
               <li>
                 <p class="paragraph-about">Frontend development</p>
@@ -100,12 +100,12 @@
           <div class="head-cv-about-container">
             <h3 class="small-title-about">Education</h3>
             <button type="button" class="btn-about" id="btn-edu">
-              <svg class="icon-close" width="20" height="20">
+              <svg class="icon-close">
                 <use href="../img/about/icons-about.svg#icon-btn"></use>
               </svg>
             </button>
           </div>
-          <div class="text-cv-about-container">
+          <div class="text-cv-about-container accordion-third">
             <ul class="list-cv-about">
               <li>
                 <p class="paragraph-about">2018 - 2019 / Frontend Development Diploma, GoIT IT <br> School, New York</p>
@@ -130,27 +130,28 @@
         <li class="item-skills-about">
           <h3 class="title-skills-about">JavaScript</h3>
         </li>
-        <li class="item-skills-about">
+        <li class="item-skills-about hide-mob">
           <h3 class="title-skills-about">React</h3>
         </li>
-        <li class="item-skills-about">
+        <li class="item-skills-about hide-mob hide-tab">
           <h3 class="title-skills-about">Node.js</h3>
         </li>
-        <li class="item-skills-about">
+        <li class="item-skills-about hide-mob hide-tab">
           <h3 class="title-skills-about">React Native</h3>
         </li>
-        <li class="item-skills-about">
+        <li class="item-skills-about hide-mob hide-tab">
           <h3 class="title-skills-about">Soft skills</h3>
         </li>
       </ul>
       <button type="button" class="btn-arrow" id="arrow">
-        <svg class="arrow-skills" width="40" height="40">
+        <svg class="arrow-skills">
           <use href="../img/about/icons-about.svg#icon-arrow"></use>
         </svg>
       </button>
     </div>
   </div>
 </section>
+
       
       <section class="section">
   <h2 class="projects-title">Projects</h2>
