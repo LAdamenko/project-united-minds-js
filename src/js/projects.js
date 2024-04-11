@@ -1,7 +1,7 @@
-import Swiper from 'swiper';
+import 'swiper/css/bundle';
 const elements = {
   buttonPrev: document.querySelector('.swiper-button-prev'),
-  buttonNext: document.querySelector('swiper-button-next'),
+  buttonNext: document.querySelector('.swiper-button-next'),
 };
 const swiper = new Swiper('.swiper', {
   navigation: {
