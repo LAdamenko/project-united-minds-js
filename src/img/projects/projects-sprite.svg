@@ -1,16 +1,1 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <!-- Иконка стрелки влево -->
-    <symbol id="icon-arrow-narrow-left" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M26.667 16H10.333"></path>
-      <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16 8L8 16l8 8"></path>
-    </symbol>
-    
-    <!-- Иконка стрелки вправо -->
-    <symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M5.333 16h21.333"></path>
-      <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M18.667 8l8 8-8 8"></path>
-    </symbol>
-  </defs>
-
-</svg>
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="icon-arrow-narrow-left" viewBox="0 0 32 32"><path fill="none" stroke="#fafafa" style="stroke:var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M26.667 16H10.333M16 8l-8 8 8 8"/></symbol><symbol id="icon-arrow-narrow-right" viewBox="0 0 32 32"><path fill="none" stroke="#fafafa" style="stroke:var(--color1, #fafafa)" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" d="M5.333 16h21.333M18.667 8l8 8-8 8"/></symbol></defs></svg>
