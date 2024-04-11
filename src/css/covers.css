@@ -15,7 +15,7 @@ body {
 .covers-wrapper {
   max-width: 100%;
   height: 100vh;
-  position: absolute;
+  /* position: absolute; */
   right: -800px; 
   left: 0;
   overflow: hidden;
@@ -32,7 +32,7 @@ body {
 .covers-slide-list {
   display: flex;
   gap: 30px;
-  transform: rotate(16deg);
+  transform: rotate(-16deg);
   margin-top: 30px;
 }
 
@@ -42,19 +42,22 @@ body {
   justify-content: center;
   max-width: 260px;
   height: 160px;
-  animation-name: marqueeLine;
-  animation-duration: 5s;
+  animation-name: slideLine;
+  animation-duration: 7s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
-@keyframes marqueeLine {
-  from {
+@keyframes slideLine {
+  0% {
     transform: translateX(-260px);
   }
   
-  to {
+  50% {
     transform: translateX(-520px); 
+  }
+  100% {
+    transform: translateX(-260px);
   }
 }
 
@@ -64,3 +67,12 @@ body {
     height: 314px;
   }
 }
+/* @keyframes marqueeLine {
+  from {
+    transform: translateX(-260px);
+  }
+  
+  to {
+    transform: translateX(-520px); 
+  }
+} */
