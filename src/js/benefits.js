@@ -10,7 +10,7 @@ function isElementInViewport(el) {
 }
 
 function handleScrollAnimation() {
-  var items = document.querySelectorAll('.benefits__item');
+  var items = document.querySelectorAll('.benefits-item');
   items.forEach(function (item) {
     if (isElementInViewport(item)) {
       item.classList.add('visible');
