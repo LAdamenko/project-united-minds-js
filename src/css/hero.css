@@ -45,12 +45,13 @@
 }
 
 .social-media-list {
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    align-items: center;
-    margin-bottom: 32px;
-  }
+  max-width: 343px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 32px;
+}
 
 .social-media-item {
   width: 37px;
@@ -65,7 +66,6 @@
 }
 
 .social-media-link {
-
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
