@@ -1,0 +1,31 @@
+.hero-section {
+  width: 100%;
+  margin: 0 auto;
+  height: 812px;
+  background-image: url(../img/hero/hero-mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+}
+
+.hero-container {
+  max-width: 343px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  position: relative;
+  top: 281px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+  text-align: left;
+  max-width: 343px;
+}
+
+/* ---------------------------------------------TABLET--------------------------------------------------*/
