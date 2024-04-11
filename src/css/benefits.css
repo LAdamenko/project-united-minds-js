@@ -70,6 +70,14 @@ body {
   border-radius: 20px;
   padding: 24px;
   background: #242527;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.benefits__item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .benefits__icon {
