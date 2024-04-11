@@ -6,13 +6,19 @@
   top: 32px;
 }
 
+@media screen and (max-width: 374px) {
+  .page-header {
+    padding: 0 16px;
+  }
+
+}
+
 .header-container {
   max-width: 343px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
   background-color: transparent;
 }
 
@@ -84,7 +90,6 @@
     letter-spacing: -0.02em;
     font-size: 15px;
   }
-
 }
 
 /* ------------------------------------------------------------DESKTOP---------------------------------*/
