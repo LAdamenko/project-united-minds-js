@@ -86,4 +86,12 @@
   height: 100%;
 }
 
+.social-media-item:active {
+  background-color: #e0373f;
+}
+
+.email-link:active {
+  background-color: #e0373f;
+}
+
 /* ---------------------------------------------TABLET--------------------------------------------------*/
