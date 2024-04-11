@@ -1,9 +1,8 @@
 .projects-section {
-  max-width: 375px;
-  margin: 0 auto;
+  padding: 64px 32px;
 }
 .container {
-  padding: 64px 32px;
+  max-width: 343px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -41,7 +40,6 @@
   border: 1px solid rgba(28, 29, 32, 0.2);
   border-radius: 60px;
   padding: 13px 18px;
-  width: 80px;
   height: 45px;
   font-weight: 500;
   font-size: 16px;
@@ -92,4 +90,53 @@
 }
 /* -------------------------------TABLET */
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+  .first-block {
+    padding: 64px 146px 64px 64px;
+  }
+  .projects-text {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin-top: 164px;
+  }
+  .second-block {
+    padding: 120px 45px;
+  }
+  .button-box {
+    gap: 20px;
+    padding: 64px;
+  }
+  .scroll-button {
+    width: 68px;
+    height: 68px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1376px;
+  }
+  .block-box {
+    display: flex;
+  }
+  .projects-list-item-tech {
+    height: 55px;
+  }
+  .first-block {
+    padding-right: 130px;
+  }
+  .projects-text {
+    margin-top: 223px;
+    max-width: 494px;
+  }
+  .projects-link-button {
+    max-width: 177px;
+    max-height: 55px;
+  }
+  .second-block {
+    padding: 120px 37px;
+  }
 }
