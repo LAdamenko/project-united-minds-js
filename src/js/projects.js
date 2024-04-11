@@ -1,12 +1,24 @@
+import Swiper from 'swiper';
 import 'swiper/css/bundle';
-const elements = {
-  buttonPrev: document.querySelector('.swiper-button-prev'),
-  buttonNext: document.querySelector('.swiper-button-next'),
-};
-const swiper = new Swiper('.swiper', {
-  navigation: {
-    prevEl: elements.buttonPrev,
-    nextEl: elements.buttonNext,
-  },
-});
-swiper.slideNext();
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+
+function doSwipe() {
+  const swiperProjects = new Swiper('.swiper', {
+    modules: [Navigation, Keyboard, Mousewheel],
+    keyboard: {
+      enabled: true,
+    },
+    mousewheel: {
+      enabled: true,
+    },
+    loop: false,
+    slidesPerView: 1,
+    speed: 400,
+    navigation: {
+      prevEl: '.swiper-prev',
+      nextEl: '.swiper-next',
+      disabledClass: 'disabled-icon',
+    },
+  });
+}
+document.addEventListener('DOMContentLoaded', doSwipe);
