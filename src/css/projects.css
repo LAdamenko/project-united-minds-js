@@ -67,6 +67,12 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
+  outline: transparent;
+  border-color: transparent;
+}
+.projects-link-button:hover,
+.projects-link-button:focus {
+  background-color: #e0373f;
 }
 .button-box {
   display: flex;
@@ -87,9 +93,8 @@
   stroke: #fafafa;
 }
 
-.disabled-icon {
-  fill: #3b3b3b;
-  stroke: #3b3b3b;
+.disabled-button {
+  opacity: 0.2;
 }
 /* -------------------------------TABLET */
 @media screen and (min-width: 768px) {

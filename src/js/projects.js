@@ -17,7 +17,7 @@ function doSwipe() {
     navigation: {
       prevEl: '.swiper-prev',
       nextEl: '.swiper-next',
-      disabledClass: 'disabled-icon',
+      disabledClass: 'disabled-button',
     },
   });
 }
