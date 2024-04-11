@@ -86,13 +86,13 @@
   color: #fafafa;
 }
 
-.accordion-second {
+/* .ac-panel.accordion-second {
   display: none;
 }
 
-.accordion-third {
+.ac-panel.accordion-third {
   display: none;
-}
+} */
 
 .gap {
   margin-bottom: 32px;
@@ -115,14 +115,18 @@
   height: 36px;
 }
 
-.swiper.skills-about-container {
+.skills-about-container.swiper {
   display: flex;
   align-items: center;
 }
 
-.swiper-wrapper.list-skills-about {
+.list-skills-about.swiper-wrapper {
   display: flex;
   margin-right: auto;
+}
+
+.swiper-wrapper {
+  width: 100px;
 }
 
 .icon-close {
@@ -144,7 +148,7 @@
   transform: rotate(180deg);
 }
 
-.swiper-slide.item-skills-about {
+.item-skills-about.swiper-slide {
   width: 130px;
   height: 130px;
   display: flex;
