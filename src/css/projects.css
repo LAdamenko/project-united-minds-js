@@ -25,7 +25,7 @@
   padding: 100px 16px;
   border-radius: 0 0 24px 24px;
 }
-.projects-list-item {
+.tech-list {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -67,13 +67,19 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
+  outline: transparent;
+  border-color: transparent;
+}
+.projects-link-button:hover,
+.projects-link-button:focus {
+  background-color: #e0373f;
 }
 .button-box {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  padding: 32px;
+  margin-top: 32px;
 }
 .scroll-button {
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -83,10 +89,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.scroll-icon {
   fill: #fafafa;
   stroke: #fafafa;
+  cursor: pointer;
+}
+.scroll-button:hover {
+  border-color: rgb(194, 121, 124);
+}
+.disabled-button {
+  opacity: 0.2;
 }
 /* -------------------------------TABLET */
 @media screen and (min-width: 768px) {
@@ -96,6 +107,9 @@
   .first-block {
     padding: 64px 146px 64px 64px;
   }
+  .second-block {
+    padding: 120px 45px;
+  }
   .projects-text {
     font-weight: 500;
     font-size: 44px;
@@ -103,12 +117,9 @@
     letter-spacing: -0.03em;
     margin-top: 164px;
   }
-  .second-block {
-    padding: 120px 45px;
-  }
   .button-box {
     gap: 20px;
-    padding: 64px;
+    margin-top: 64px;
   }
   .scroll-button {
     width: 68px;

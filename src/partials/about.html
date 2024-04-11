@@ -1,34 +1,34 @@
 <section class="about">
   <div class="container-about">
     <div class="image-about-container">
-      <h1 class="hide-title-about">A few words about Fullstack Developer Lloyd Jefferson</h1>
+      <h1 class="hide-title-about" id="about">A few words about Fullstack Developer Lloyd Jefferson</h1>
       <div class="title-about-container">
         <h2 class="title-about">I work with people all over the world to create impressive and <span
             class="red">functional</span> <span class="gray">websites</span> that reflect each client's unique
           personality.</h2>
       </div>
       <picture>
-        <source srcset="../img/about/img.jpg 1x, ../img/about/img@2x.jpg 2x" media="(min-width: 1440px)" />
+        <source srcset="./img/about/img.jpg 1x, ./img/about/img@2x.jpg 2x" media="(min-width: 1440px)" />
 
-        <source srcset="../img/about/img-tab.jpg 1x, ../img/about/img-tab@2x.jpg 2x" media="(min-width: 768px)" />
+        <source srcset="./img/about/img-tab.jpg 1x, ./img/about/img-tab@2x.jpg 2x" media="(min-width: 768px)" />
 
-        <source srcset="../img/about/img-mob.jpg 1x, ../img/about/img-mob@2x.jpg 2x" media="(max-width: 768px)" />
+        <source srcset="./img/about/img-mob.jpg 1x, ./img/about/img-mob@2x.jpg 2x" media="(max-width: 768px)" />
 
-        <img class="img-about" src="../img/about/img.jpg" alt="Man with a laptop">
+        <img class="img-about" src="./img/about/img.jpg" alt="Man with a laptop">
       </picture>
     </div>
     <div class="text-about-container">
-      <ul class="accordion-container list-about">
+      <ul class="list-about">
         <li class="item-about">
           <div class="head-cv-about-container">
             <h3 class="small-title-about">About me</h3>
             <button type="button" class="btn-about" id="btn-about">
-              <svg class="icon-open">
-                <use href="../img/about/icons-about.svg#icon-btn"></use>
+              <svg class="icon-about icon-open">
+                <use href="./img/about/icons-about.svg#icon-btn"></use>
               </svg>
             </button>
           </div>
-          <div class="accordion-first text-cv-about-container">
+          <div class="text-cv-about-container">
             <p class="paragraph-about gap">I am Lloyd Jefferson, a talented programmer with extensive expertise in
               software development. I have an understanding
               of
@@ -56,12 +56,12 @@
           <div class="head-cv-about-container">
             <h3 class="small-title-about">Role</h3>
             <button type="button" class="btn-about" id="btn-role">
-              <svg class="icon-close">
-                <use href="../img/about/icons-about.svg#icon-btn"></use>
+              <svg class="icon-about icon-close">
+                <use href="./img/about/icons-about.svg#icon-btn"></use>
               </svg>
             </button>
           </div>
-          <div class="accordion-second text-cv-about-container">
+          <div class="text-cv-about-container">
             <ul class="list-cv-about">
               <li>
                 <p class="paragraph-about">Frontend development</p>
@@ -79,12 +79,12 @@
           <div class="head-cv-about-container">
             <h3 class="small-title-about">Education</h3>
             <button type="button" class="btn-about" id="btn-edu">
-              <svg class="icon-close">
-                <use href="../img/about/icons-about.svg#icon-btn"></use>
+              <svg class="icon-about icon-close">
+                <use href="./img/about/icons-about.svg#icon-btn"></use>
               </svg>
             </button>
           </div>
-          <div class="accordion-third text-cv-about-container">
+          <div class="text-cv-about-container">
             <ul class="list-cv-about">
               <li>
                 <p class="paragraph-about">2018 - 2019 / Frontend Development Diploma, GoIT IT <br> School, New York</p>
@@ -101,33 +101,33 @@
         </li>
       </ul>
     </div>
-    <div class="swiper skills-about-container">
-      <ul class="swiper-wrapper list-skills-about">
-        <li class="swiper-slide item-skills-about red-skill">
+    <div class="skills-about-container swiper-about">
+      <ul class="list-skills-about swiper-wrapper">
+        <li class="item-skills-about red-skill swiper-slide" style="width: 200px; height: 200px;">
           <h3 class="title-skills-about">HTML/CSS</h3>
         </li>
-        <li class="swiper-slide item-skills-about">
+        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
           <h3 class="title-skills-about">JavaScript</h3>
         </li>
-        <li class="swiper-slide item-skills-about">
+        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
           <h3 class="title-skills-about">React</h3>
         </li>
-        <li class="swiper-slide item-skills-about">
+        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
           <h3 class="title-skills-about">Node.js</h3>
         </li>
-        <li class="swiper-slide item-skills-about">
+        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
           <h3 class="title-skills-about">React Native</h3>
         </li>
-        <li class="swiper-slide item-skills-about">
+        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
           <h3 class="title-skills-about">Soft skills</h3>
         </li>
-        <li class="swiper-slide hide-desktop">
+        <li class="hide-desktop swiper-slide" style="width: 200px; height: 200px;">
           <h3 class="title-skills-about hide-desktop">Hard skills</h3>
         </li>
       </ul>
-      <button type="button" class="swiper-btn btn-arrow" id="arrow">
+      <button type="button" class="btn-arrow" id="arrow">
         <svg class="arrow-skills">
-          <use href="../img/about/icons-about.svg#icon-arrow"></use>
+          <use href="./img/about/icons-about.svg#icon-arrow"></use>
         </svg>
       </button>
     </div>
