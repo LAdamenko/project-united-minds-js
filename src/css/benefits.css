@@ -4,6 +4,7 @@ body {
 }
 
 .benefits {
+  max-width: none;
   padding: 64px 0;
 }
 
