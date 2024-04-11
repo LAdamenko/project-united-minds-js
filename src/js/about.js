@@ -1,5 +1,5 @@
-// import Accordion from 'accordion-js';
-// import 'accordion-js/dist/accordion.min.css';
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 
 
@@ -11,25 +11,40 @@ const buttons = document.querySelectorAll('.btn-about');
 
 const acc = new Accordion('.accordion-container', {
   showMultiple: true,
-  collapse: true,
 });
 
-// const icon = document.querySelector('.icon-about');
+const icons = document.querySelectorAll('.icon-about');
 
-// function switcher() {
-//   icon.classList.toggle('.icon-close');
-//   icon.classList.toggle('.icon-open');
-//   console.log('hello');
-// }
+function switcher() {
+  icons.forEach((i) => {
+    i.classList.toggle('icon-close');
+    i.classList.toggle('icon-open');
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      acc.open();
+      const content = document.querySelector('.ac-panel');
+      icons.forEach((icon) => {
+        if (icon.classList.contains('icon-open')) {
+          acc.close(content);
+        }
+        else {
+          acc.open(content);
+        }
+      })
+      switcher();
       console.log('hello');
     });
   });
-}
+});
+
+
+
+
+
+
 
 
 // const acc = new Accordion('.accordion-container', {
