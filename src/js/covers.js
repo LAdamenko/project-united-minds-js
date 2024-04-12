@@ -1,54 +1,37 @@
-// const observer = new IntersectionObserver((enteries) => {
-    //     enteries.forEach(entery => {
-//         if (entery.isIntersecting) {
-//             startAnimation();
-//         } else {
-    //             stopAnimation();
-    //         }
-    //     })
-    // });
-    // observer.observe(coverWrapper);
+
 const coverSection = document.querySelector(".covers-section");
+// Об'єкт налаштувань для Observer'а.
 const options = {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "270px",
     threshold: 0.5,
 }
-const observeFunc = (enteries, observer) => {
+// Колбек функція для Observer'а.
+const observeFunc = (enteries) => {
+    // Observer створює масив входженнь таргета в зону спостереждення
     enteries.forEach(entry => {
+        // Коли таргет входить в зону спостереження запускаємо анімацію
       if (entry.isIntersecting) {
           startAnimation();
-           console.log('Анімація працює');
+        //   Коли виходить анімацію зупиняємо
       } else {
           stopAnimation();
-           console.log('Анімація зупинена');
       }
     });
 }
-
+// Функція зупинки анімації
 function stopAnimation() {
-    const slideItem = document.querySelector(".covers-slide");
-
-    slideItem.style.animation = "none";
+    const slideItem = document.querySelectorAll(".covers-slide");
+    slideItem.forEach((slide) => slide.classList.remove("animation"))
 }
+// Функція запуску анімації
 function startAnimation() {
-    const slideItem = document.querySelector(".covers-slide");
-
-    slideItem.style.animation = 'slideLine 7s infinite';
+    const slideItem = document.querySelectorAll(".covers-slide");
+    slideItem.forEach((slide) => slide.classList.add("animation"));
+    
 }
-
-
-
-
+// Створення екземпляру Interseption Observer 
 const observer = new IntersectionObserver(observeFunc, options);
+// Передаємо секцію в якості таргета для спостереження 
 observer.observe(coverSection)
 
-const slideItem = document.querySelector('.covers-slide');
-const computedStyles = window.getComputedStyle(slideItem);
-const animationName = computedStyles.getPropertyValue('animation-name').trim(); // Отримання ім'я анімації і обрізка пробілів
-
-if (animationName === 'none') {
-  console.log('Анімація зупинена');
-} else {
-  console.log('Анімація працює');
-}

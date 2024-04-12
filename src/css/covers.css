@@ -19,7 +19,7 @@ body {
   right: -800px; 
   left: 0;
   overflow: hidden;
-  background-image: url(../img/covers-background.png);
+  background-image: url(../img/covers/covers-background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -42,6 +42,8 @@ body {
   justify-content: center;
   max-width: 260px;
   height: 160px;
+}
+.animation{
   animation-name: slideLine;
   animation-duration: 7s;
   animation-timing-function: ease-in-out;
@@ -50,14 +52,13 @@ body {
 
 @keyframes slideLine {
   0% {
-    transform: translateX(-260px);
-  }
-  
+    transform: translateX(-120px);
+  } 
   50% {
     transform: translateX(-520px); 
   }
   100% {
-    transform: translateX(-260px);
+    transform: translateX(-120px);
   }
 }
 
@@ -67,12 +68,3 @@ body {
     height: 314px;
   }
 }
-/* @keyframes marqueeLine {
-  from {
-    transform: translateX(-260px);
-  }
-  
-  to {
-    transform: translateX(-520px); 
-  }
-} */
