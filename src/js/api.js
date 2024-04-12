@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export function apiGet(){
-    const base_url = "https://portfolio-js.b.goit.study";
+    const base_url = "https://portfolio-js.b.goit.study/api";
     const end_point = "/api/reviews";
     const url = `${base_url}${end_point}`;
 
@@ -14,7 +14,7 @@ export function apiGet(){
 }
 
 export function apiPost(data){
-    const base_url = "https://portfolio-js.b.goit.study";
+    const base_url = "https://portfolio-js.b.goit.study/api";
     const end_point = "/api/footer";
     const url = `${base_url}${end_point}`;
 
