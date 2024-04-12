@@ -18,7 +18,7 @@
 }
 
 .hero-container {
-  max-width: 343px;
+  width: 343px;
   margin: 0 auto;
   position: relative;
   top: 281px;
@@ -31,7 +31,6 @@
 }
 
 .hero-title {
-  width: 100%;
   font-weight: 500;
   font-size: 50px;
   line-height: 1;
@@ -45,7 +44,6 @@
 }
 
 .social-media-list {
-  max-width: 343px;
   display: flex;
   justify-content: center;
   gap: 4px;
@@ -95,3 +93,95 @@
 }
 
 /* ---------------------------------------------TABLET--------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    height: 1024px;
+    background-image: url(../img/hero/hero-tablet.png);
+  }
+
+  @media screen and (min-resolution: 192dpi) and (max-width: 1339x),
+    screen and (min-resolution: 2dppx) and (max-width: 1339px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 1339px) {
+    .hero-section {
+      background-image: url(../img/hero/hero-tablet@2x.png);
+    }
+  }
+
+  .hero-container {
+    width: 704px;
+    top: 300px;
+  }
+
+  .hero-title {
+    font-size: 90px;
+    max-width: 632px;
+    max-height: 450px;
+    margin-bottom: 187px;
+  }
+
+  .social-media-list {
+    width: 473px;
+    gap: 8px;
+    margin-left: auto;
+  }
+
+  .social-media-item {
+    padding: 18px 20px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .social-media-link {
+    font-size: 16px;
+  }
+
+  .email-link {
+    font-size: 16px;
+    padding: 18px 24px;
+    width: 223px;
+    height: 55px;
+  }
+}
+
+/* ------------------------------------------------------------DESKTOP---------------------------------*/
+
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    height: 900px;
+    background-image: url(../img/hero/hero-desktop.png);
+  }
+
+  .hero-container {
+    width: 1376px;
+  }
+
+  .hero-title {
+    max-width: 1084px;
+    max-height: 270px;
+    margin: auto;
+    margin-bottom: 243px;
+  }
+
+  .social-media-item:hover,
+  .social-media-item:focus {
+    background-color: #e0373f;
+  }
+
+  .social-media-item {
+    cursor: pointer;
+  }
+  
+  .email-link:hover,
+  .email-link:focus {
+    background-color: #e0373f;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440x),
+screen and (min-resolution: 2dppx) and (min-width: 1440px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+.hero-section {
+  background-image: url(../img/hero/hero-desktop@2x.png);
+}
+}

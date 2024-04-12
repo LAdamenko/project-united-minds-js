@@ -14,7 +14,7 @@
 }
 
 .header-container {
-  max-width: 343px;
+  width: 343px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -64,7 +64,7 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    max-width: 704px;
+    width: 704px;
   }
 
   .menu-button {
@@ -96,7 +96,7 @@
 
 @media screen and (min-width: 1440px) {
   .header-container {
-    max-width: 1376px;
+    width: 1376px;
   }
 
   .logo:hover,
