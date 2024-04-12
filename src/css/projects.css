@@ -69,6 +69,7 @@
   color: #fafafa;
   outline: transparent;
   border-color: transparent;
+  transition: background-color, 1s;
 }
 .projects-link-button:hover,
 .projects-link-button:focus {
@@ -92,11 +93,20 @@
   fill: #fafafa;
   stroke: #fafafa;
   cursor: pointer;
+  transition: stroke 1s, fill 1s, border 1s, box-shadow 1s;
 }
 .scroll-button:hover {
-  border-color: #e0373f;
+  border: 1px solid #e0373f;
   fill: #e0373f;
   stroke: #e0373f;
+  box-shadow: 0 0 15px 1px #e0373f;
+}
+
+.disabled-button:hover {
+  fill: #fafafa;
+  stroke: #fafafa;
+  border-color: transparent;
+  box-shadow: none;
 }
 .disabled-button {
   opacity: 0.2;
@@ -128,6 +138,7 @@
     height: 68px;
   }
 }
+/* --------------------Desktop */
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1376px;
@@ -153,5 +164,53 @@
   .second-block {
     padding: 120px 37px;
     border-radius: 0 24px 24px 0;
+  }
+  @keyframes projectsMarkup {
+    0% {
+      box-shadow: 0 0 10px #fafafa;
+      background-color: #fafafa;
+    }
+    50% {
+      box-shadow: 0 0 15px 3px #e0373f;
+      background-color: #e0373f;
+      color: #fafafa;
+    }
+    100% {
+      box-shadow: 0 0 10px #fafafa;
+      background-color: #fafafa;
+    }
+  }
+
+  .projects-list-item-tech {
+    animation: projectsMarkup 6s infinite;
+  }
+  .n-one {
+    animation-delay: 0.75s;
+  }
+  .n-two {
+    animation-delay: 1.5s;
+  }
+  .n-three {
+    animation-delay: 2.25s;
+  }
+  .n-four {
+    animation-delay: 2.99s;
+  }
+  @keyframes buttonMarkup {
+    0% {
+      box-shadow: 0 0 10px #e0373f;
+    }
+    50% {
+      box-shadow: 0 0 15px 3px #000000;
+    }
+    100% {
+      box-shadow: 0 0 10px #e0373f;
+    }
+  }
+  .projects-link-button {
+    animation: buttonMarkup 6s infinite;
+  }
+  .projects-text {
+    text-shadow: 1px 1px 1px #000000;
   }
 }
