@@ -125,7 +125,7 @@
   display: flex;
 }
 
-.swiper-wrapper {
+.skills-about-container .swiper-wrapper {
   width: 100px;
 }
 
