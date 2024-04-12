@@ -59,6 +59,7 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  padding-bottom: 32px;
 }
 
 .head-cv-about-container {
@@ -72,26 +73,17 @@
   color: rgba(250, 250, 250, 0.4);
 
   margin-right: auto;
-  margin-bottom: 32px;
 }
 
 .text-cv-about-container {
   text-align: start;
-  padding: 12px 0 20px;
+  padding: 12px 0 0;
 }
 
 .paragraph-about {
   letter-spacing: -0.02em;
   color: #fafafa;
 }
-
-/* .ac-panel.accordion-second {
-  display: none;
-}
-
-.ac-panel.accordion-third {
-  display: none;
-} */
 
 .gap {
   margin-bottom: 32px;
@@ -112,6 +104,7 @@
   padding: 9px;
   width: 36px;
   height: 36px;
+  margin-bottom: 0;
 }
 
 .skills-about-container {
@@ -144,7 +137,7 @@
   border: none;
 }
 
-.icon-open {
+.icon-close.icon-open {
   width: 12px;
   height: 12px;
   fill: none;
@@ -154,12 +147,13 @@
   transform: rotate(180deg);
 }
 
-.item-skills-about {
+.list-skills-about .item-skills-about {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
+  height: 200px;
   padding: 88px 52px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100%;
@@ -208,23 +202,16 @@
 }
 
 .swiper-about .swiper-wrapper {
-  width: 1200px;
+  width: 260px;
   overflow: hidden;
 }
 
-.item-about.ac {
-  background-color: transparent;
-  border: transparent;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+.ac .ac-panel {
+  overflow: hidden;
+  transition: height 250ms cubic-bezier(.4, 0, .2, 1), visibility 250ms cubic-bezier(.4, 0, .2, 1);
 }
 
-.head-cv-about-container.ac-header {
-  background-color: transparent;
-}
 
-.text-cv-about-container.ac-panel {
-  background-color: transparent;
-}
 
 @media screen and (max-width: 767px) {
   .swiper-slide.hide-mob {
@@ -291,7 +278,7 @@
 
   .text-cv-about-container {
     text-align: start;
-    padding: 8px 0 32px;
+    padding: 8px 0 0;
   }
 
   .btn-about {
@@ -323,6 +310,16 @@
   .arrow-skills {
     width: 40px;
     height: 40px;
+  }
+
+  .swiper-about .swiper-wrapper {
+    width: 600px;
+    overflow: hidden;
+  }
+
+  .list-skills-about .item-skills-about {
+    height: 200px;
+    margin: 88px auto;
   }
 }
 
@@ -372,7 +369,7 @@
     letter-spacing: -0.02em;
     color: #fafafa;
 
-    padding: 8px 68px 32px 696px;
+    padding: 8px 68px 0 696px;
   }
 
   .list-cv-about {
@@ -383,7 +380,6 @@
     padding: 10px;
     width: 40px;
     height: 40px;
-    margin-bottom: 32px;
   }
 
   .icon-close {
@@ -413,5 +409,10 @@
   .arrow-skills {
     width: 40px;
     height: 40px;
+  }
+
+  .swiper-about .swiper-wrapper {
+    width: 1200px;
+    overflow: hidden;
   }
 }
