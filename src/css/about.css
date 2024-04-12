@@ -108,12 +108,13 @@
 }
 
 .skills-about-container {
-  position: relative;
   display: flex;
+  width: 1312px;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 55px;
+  overflow: hidden;
 }
 
 .skills-about-container .swiper-slide-active {
