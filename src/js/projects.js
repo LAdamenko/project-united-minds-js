@@ -13,7 +13,7 @@ function doSwipe() {
     },
     loop: false,
     slidesPerView: 1,
-    speed: 400,
+    speed: 1000,
     navigation: {
       prevEl: '.swiper-prev',
       nextEl: '.swiper-next',
