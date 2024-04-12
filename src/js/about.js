@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Keyboard, Mousewheel } from 'swiper/modules';
 
-const icons = document.querySelectorAll('.icon-about');
+
 
 const buttons = document.querySelectorAll('.btn-about');
 
