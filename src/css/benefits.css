@@ -3,19 +3,17 @@ body {
   background-color: #1c1d20;
 }
 
-.benefits {
-  padding: 64px 0;
-}
+
 
 @media screen and (min-width: 768px) {
   .benefits {
-    padding: 96px 0;
+    padding: 35px 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .benefits {
-    padding: 164px 0;
+    padding: 100px 0;
   }
 }
 
