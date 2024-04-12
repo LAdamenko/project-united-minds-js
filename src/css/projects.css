@@ -115,16 +115,12 @@
 @keyframes projectsMarkup {
   0% {
     box-shadow: 0 0 10px #fafafa;
-    background-color: #fafafa;
   }
   50% {
-    box-shadow: 0 0 15px 3px #e0373f;
-    background-color: #e0373f;
-    color: #fafafa;
+    box-shadow: 0 0 15px 5px #e0373f;
   }
   100% {
     box-shadow: 0 0 10px #fafafa;
-    background-color: #fafafa;
   }
 }
 
