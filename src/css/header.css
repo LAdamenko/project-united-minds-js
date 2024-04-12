@@ -165,6 +165,10 @@
     width: 704px;
   }
 
+  .mobile-menu-wrapper {
+    display: none;
+}
+
   .menu-button {
     display: none;
   }
