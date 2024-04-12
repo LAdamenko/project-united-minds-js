@@ -68,3 +68,43 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .container {
+    max-width: 704px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .container {
+    max-width: 1376px;
+    margin: 0 auto;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
