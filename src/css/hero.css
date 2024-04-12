@@ -92,6 +92,7 @@
   background-color: #e0373f;
 }
 
+
 /* ---------------------------------------------TABLET--------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
@@ -171,7 +172,7 @@
   .social-media-item {
     cursor: pointer;
   }
-  
+
   .email-link:hover,
   .email-link:focus {
     background-color: #e0373f;
@@ -179,9 +180,9 @@
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440x),
-screen and (min-resolution: 2dppx) and (min-width: 1440px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-.hero-section {
-  background-image: url(../img/hero/hero-desktop@2x.png);
-}
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .hero-section {
+    background-image: url(../img/hero/hero-desktop@2x.png);
+  }
 }
