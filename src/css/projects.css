@@ -94,7 +94,9 @@
   cursor: pointer;
 }
 .scroll-button:hover {
-  border-color: rgb(194, 121, 124);
+  border-color: #e0373f;
+  fill: #e0373f;
+  stroke: #e0373f;
 }
 .disabled-button {
   opacity: 0.2;
@@ -138,6 +140,7 @@
   }
   .first-block {
     padding-right: 130px;
+    border-radius: 24px 0 0 24px;
   }
   .projects-text {
     margin-top: 223px;
@@ -149,5 +152,6 @@
   }
   .second-block {
     padding: 120px 37px;
+    border-radius: 0 24px 24px 0;
   }
 }
