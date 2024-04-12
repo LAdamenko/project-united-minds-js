@@ -140,6 +140,7 @@
   }
   .first-block {
     padding-right: 130px;
+    border-radius: 24px 0 0 24px;
   }
   .projects-text {
     margin-top: 223px;
@@ -151,5 +152,6 @@
   }
   .second-block {
     padding: 120px 37px;
+    border-radius: 0 24px 24px 0;
   }
 }
