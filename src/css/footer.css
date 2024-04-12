@@ -1,7 +1,12 @@
+.container-footer {
+  margin-right: auto;
+  margin-left: auto;
+}
 .footer-section {
   padding: 32px 16px;
 }
 .luck {
+  max-width: 270px;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -9,7 +14,7 @@
   margin-bottom: 65px;
 }
 .img-footer {
-  display: inline-block;
+  display: block;
   width: 44px;
   border-radius: 12px;
   margin-right: 8px;
@@ -123,21 +128,6 @@
   color: #fafafa;
 }
 
-/* Адаптивна верстка з 375px */
-@media only screen and (min-width: 375px) {
-  /* Ваші стилі для адаптивної верстки на пристроях з шириною 375px і більше */
-}
-
-/* Точка перелому для планшетів */
-@media only screen and (min-width: 768px) {
-  /* Ваші стилі для планшетів */
-}
-
-/* Точка перелому для настільних пристроїв */
-@media only screen and (min-width: 1440px) {
-  /* Ваші стилі для настільних пристроїв */
-}
-
 /* modal styles */
 
 body.modal-open {
@@ -148,15 +138,14 @@ body.modal-open {
   position: fixed;
   left: 0;
   top: 0;
-  max-width: 100%; /* Змінено height на width */
+  width: 100%;
   height: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
   display: flex; /* Додаємо flex для центрування по обох осях */
   justify-content: center; /* Центрування по горизонталі */
   align-items: center; /* Центрування по вертикалі */
   background-color: rgba(0, 0, 0, 0.2);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .backdrop.is-hidden {
@@ -170,6 +159,7 @@ body.modal-open {
 
 .modal {
   position: relative;
+  width: 345px;
   background-color: #1c1d20;
   border: 1px solid rgba(250, 250, 250, 0.1);
   border-radius: 20px;
@@ -214,6 +204,7 @@ body.modal-open {
   letter-spacing: -0.02em;
   text-align: center;
   color: #fafafa;
+  margin-bottom: 16px;
 }
 .footer-modal-text {
   font-family: 'Inter Tight', sans-serif;
@@ -223,4 +214,88 @@ body.modal-open {
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(250, 250, 250, 0.6);
+}
+
+/* Для мобільних пристроїв, коли вони стають адаптивними */
+@media only screen and (min-width: 375px) {
+  .container-footer {
+    max-width: 375px;
+  }
+}
+
+/* Для планшетів */
+@media only screen and (min-width: 768px) {
+  .container-footer {
+    max-width: 704px;
+  }
+  .footer-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .luck {
+    max-width: 550px;
+    margin-bottom: 18px;
+  }
+  .img-footer {
+    width: 70px;
+
+    border-radius: 24px;
+    margin-right: 20px;
+  }
+  .footer-title {
+    font-size: 64px;
+  }
+  #contact-form {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 18px;
+    gap: 32px;
+  }
+  #email {
+    width: 245px;
+    margin-bottom: 0;
+  }
+  #comment {
+    width: 245px;
+    margin-bottom: 0px;
+  }
+  #submit-btn {
+    width: 150px;
+    height: 150px;
+  }
+  .footer-contacts {
+    gap: 8px;
+  }
+  .footer-contacts > .item {
+    padding: 18px 32px;
+  }
+  .footer-contacts-link {
+    font-size: 16px;
+  }
+  .modal {
+    width: 500px;
+
+    padding: 64px;
+  }
+  .footer-modal-text {
+    max-width: 365px;
+  }
+}
+
+/* Для настільних комп'ютерів */
+@media only screen and (min-width: 1440px) {
+  .container-footer {
+    max-width: 1050px;
+  }
+  #contact-form {
+    gap: 0px;
+  }
+  #email {
+    width: 390px;
+    margin-right: 32px;
+  }
+  #comment {
+    width: 390px;
+    margin-right: 86px;
+  }
 }
