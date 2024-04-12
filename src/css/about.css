@@ -229,12 +229,6 @@
   color: #E0373F;
 }
 
-@media screen and (max-width: 767px) {
-  .swiper-slide.hide-mob {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
   .about {
