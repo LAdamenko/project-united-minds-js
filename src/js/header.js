@@ -2,7 +2,7 @@ const mobileMenuBtn = document.querySelector(".menu-button");
 const mobileMenu = document.querySelector(".mobile-menu-wrapper");
 const mobileMenuCloseBtn = document.querySelector(".mobile-menu-close-btn");
 const tabletAndDesktopMenu = document.querySelector(".tablet-and-desktop-menu-navigation-wrapper");
-const tabletAndDesktopMenuLink = document.querySelector(".menu-link")
+const tabletAndDesktopMenuLink = document.querySelector(".menu-link");
 
 mobileMenuBtn.addEventListener("click", () => {
     mobileMenu.classList.add("is-open");
