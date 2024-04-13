@@ -36,22 +36,42 @@
   flex-direction: column;
   margin-bottom: 64px;
 }
+.validateEmail {
+  position: relative;
+  margin-bottom: 10px;
+}
+#emailValidationMessage {
+  position: absolute;
+  top: 45px;
+  left: 5px;
+}
 #email {
   min-height: 45px;
+  width: 100%;
   background: none;
   outline: none;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 
   margin-bottom: 16px;
-  position: relative;
+
+  padding: 8px;
 
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.6);
+  color: #fafafa;
+
+  transition-property: border;
+  transition-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#email:hover,
+#email:focus {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
 }
 
 #email::placeholder {
@@ -61,27 +81,33 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
-
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 #comment {
   max-height: 45px;
+  width: 100%;
   resize: none;
   background: none;
   outline: none;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   margin-bottom: 16px;
-  position: relative;
+  padding: 8px;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.6);
+  color: #fafafa;
   margin-bottom: 32px;
+
+  transition-property: border;
+  transition-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#comment:hover,
+#comment:focus {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
 }
 #comment::placeholder {
   font-family: 'Inter Tight', sans-serif;
@@ -90,10 +116,6 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
-
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 #submit-btn {
   width: 100px;
@@ -108,24 +130,41 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
+
+  transition-property: background-color;
+  transition-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+#submit-btn:hover,
+#submit-btn:focus {
+  background-color: #e0373f;
+}
 .footer-contacts {
   display: flex;
   flex-direction: row;
   gap: 4px;
 }
-.footer-contacts > .item {
+.footer-contacts-link {
+  display: block;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px 12px;
-}
-.footer-contacts-link {
+
+  transition-property: border;
+  transition-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: #fafafa;
+
+  padding: 10px 12px;
+}
+.footer-contacts-link:hover,
+.footer-contacts-link:active {
+  border: 1px solid #fafafa;
 }
 
 /* modal styles */
@@ -219,7 +258,7 @@ body.modal-open {
 /* Для мобільних пристроїв, коли вони стають адаптивними */
 @media only screen and (min-width: 375px) {
   .container-footer {
-    max-width: 375px;
+    max-width: 345px;
   }
 }
 
@@ -245,6 +284,9 @@ body.modal-open {
   .footer-title {
     font-size: 64px;
   }
+  .validateEmail {
+    margin-bottom: 0;
+  }
   #contact-form {
     flex-direction: row;
     align-items: center;
@@ -266,7 +308,7 @@ body.modal-open {
   .footer-contacts {
     gap: 8px;
   }
-  .footer-contacts > .item {
+  .footer-contacts-link {
     padding: 18px 32px;
   }
   .footer-contacts-link {
