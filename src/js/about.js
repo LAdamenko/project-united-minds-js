@@ -2,7 +2,7 @@ import Accordion from 'accordion-js';
 
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Keyboard, Mousewheel } from 'swiper/modules';
+import { EffectCoverflow, Keyboard, Mousewheel } from 'swiper/modules';
 
 
 
@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const swiper = new Swiper('.swiper-about', {
   modules: [Keyboard, Mousewheel],
+  cssMode: true,
+  preventInteractionOnTransition: true,
   speed: 400,
   spaceBetween: 0,
   allowTouchMove: true,
