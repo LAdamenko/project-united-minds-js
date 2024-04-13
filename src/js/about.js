@@ -1,72 +1,79 @@
 import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
 
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Keyboard, Mousewheel } from 'swiper/modules';
-
-// const buttons = document.querySelectorAll('.btn-about');
-
-// const acc = new Accordion('.accordion-container', {
-//   showMultiple: true,
-//   collapse: true,
-// });
-
-// const icon = document.querySelector('.icon-about');
-
-// function switcher() {
-//   icon.classList.toggle('.icon-close');
-//   icon.classList.toggle('.icon-open');
-//   console.log('hello');
-// }
+import { EffectCoverflow, Keyboard, Mousewheel } from 'swiper/modules';
 
 
-// buttons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     acc.open();
-//     switcher();
-//   });
-// });
 
-// buttons.forEach(function (button) {
-//   button.addEventListener("click", () => {
-//     console.log('hello');
-//   });
-// })
+const buttons = document.querySelectorAll('.btn-about');
+
+const accordionItems = document.querySelectorAll('.ac');
 
 
-// const swiper = new Swiper('.swiper', {
-//   modules: [Keyboard, Mousewheel],
-//   speed: 400,
-//   spaceBetween: 0,
-//   allowTouchMove: true,
-//   loop: true,
-//   slideToClickedSlide: true,
-//   keyboard: {
-//     enabled: true,
-//     onlyInViewport: true,
-//   },
-//   mousewheel: {
-//     enabled: true,
-//   },
-//   slidesPerView: 'auto',
-//   breakpoints: {
-//     375: {
-//       slidesPerView: 2
-//     },
-//     768: {
-//       slidesPerView: 3
-//     },
-//     1440: {
-//       slidesPerView: 6
-//     }
-//   }
-// });
+document.addEventListener("DOMContentLoaded", () => {
+  const acc = new Accordion('.accordion-container', {
+    showMultiple: true,
+    openOnInit: [0],
+  });
+  accordionItems.forEach(item => {
+    const header = item.querySelector('.ac-header');
+    const panel = item.querySelector('.ac-panel');
 
-// const swipeBtn = document.querySelector('.btn-arrow');
+    header.addEventListener('click', () => {
+      const isActive = panel.classList.contains('active');
+      if (isActive) {
+        acc.close(panel);
+      } else {
+        acc.open(panel);
+      }
+    });
+  });
+  buttons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const icon = event.currentTarget.querySelector('.icon-about');
+      icon.classList.toggle('icon-close');
+      icon.classList.toggle('icon-open');
+    });
+  });
 
-// swipeBtn.addEventListener("click", () => {
-//   swiper.slideNext();
-//   swiper.updateSize();
-//   swiper.updateSlides();
-// });
+});
+
+
+const swiper = new Swiper('.swiper-about', {
+  modules: [Keyboard, Mousewheel],
+  cssMode: true,
+  preventInteractionOnTransition: true,
+  speed: 400,
+  spaceBetween: 0,
+  allowTouchMove: true,
+  loop: true,
+  slideToClickedSlide: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  mousewheel: {
+    enabled: true,
+  },
+  slidesPerView: 2,
+  width: 260,
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      width: 600
+    },
+    1440: {
+      slidesPerView: 6,
+      width: 1200
+    }
+  }
+});
+
+const swipeBtn = document.querySelector('.btn-arrow');
+
+swipeBtn.addEventListener("click", () => {
+  swiper.slideNext();
+  swiper.updateSize();
+  swiper.updateSlides();
+});

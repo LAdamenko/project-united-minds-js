@@ -1,35 +1,53 @@
-<section class="about">
+<section class="about" id="btn-about">
   <div class="container-about">
     <div class="image-about-container">
-      <h1 class="hide-title-about">A few words about Fullstack Developer Lloyd Jefferson</h1>
+      <h1 class="hide-title-about" id="about">
+        A few words about Fullstack Developer Lloyd Jefferson
+      </h1>
       <div class="title-about-container">
-        <h2 class="title-about">I work with people all over the world to create impressive and <span
-            class="red">functional</span> <span class="gray">websites</span> that reflect each client's unique
-          personality.</h2>
+        <h2 class="title-about">
+          I work with people all over the world to create impressive and
+          <span class="red">functional</span>
+          <span class="gray">websites</span> that reflect each client's unique
+          personality.
+        </h2>
       </div>
       <picture>
-        <source srcset="../img/about/img.jpg 1x, ../img/about/img@2x.jpg 2x" media="(min-width: 1440px)" />
+        <source
+          srcset="./img/about/img.jpg 1x, ./img/about/img@2x.jpg 2x"
+          media="(min-width: 1440px)"
+        />
 
-        <source srcset="../img/about/img-tab.jpg 1x, ../img/about/img-tab@2x.jpg 2x" media="(min-width: 768px)" />
+        <source
+          srcset="./img/about/img-tab.jpg 1x, ./img/about/img-tab@2x.jpg 2x"
+          media="(min-width: 768px)"
+        />
 
-        <source srcset="../img/about/img-mob.jpg 1x, ../img/about/img-mob@2x.jpg 2x" media="(max-width: 768px)" />
+        <source
+          srcset="./img/about/img-mob.jpg 1x, ./img/about/img-mob@2x.jpg 2x"
+          media="(max-width: 768px)"
+        />
 
-        <img class="img-about" src="../img/about/img.jpg" alt="Man with a laptop">
+        <img
+          class="img-about"
+          src="./img/about/img.jpg"
+          alt="Man with a laptop"
+        />
       </picture>
     </div>
     <div class="text-about-container">
-      <ul class="list-about">
-        <li class="item-about">
+      <ul class="list-about accordion-container">
+        <li class="item-about ac">
           <div class="head-cv-about-container">
-            <h3 class="small-title-about">About me</h3>
-            <button type="button" class="btn-about" id="btn-about">
+            <h3 class="small-title-about ac-header">About me</h3>
+            <button type="button" class="btn-about ac-trigger">
               <svg class="icon-about icon-open">
                 <use href="./img/about/icons-about.svg#icon-btn"></use>
               </svg>
             </button>
           </div>
-          <div class="text-cv-about-container">
-            <p class="paragraph-about gap">I am Lloyd Jefferson, a talented programmer with extensive expertise in
+          <div class="text-cv-about-container ac-panel">
+            <p class="paragraph-about gap ac-text-about">I am Lloyd Jefferson, a talented programmer with extensive expertise in
               software development. I have an understanding
               of
               different programming languages ​​and technologies, always ready to improve my skills. I always follow the
@@ -38,7 +56,7 @@
               and look for unconventional, creative solutions to problems. I have a high level of analytical skills and
               am able to
               effectively solve even the most difficult tasks encountered on the way.</p>
-            <p class="paragraph-about">Able to work both independently and in a team. I can effectively cooperate with
+            <p class="paragraph-about ac-text-about">Able to work both independently and in a team. I can effectively cooperate with
               colleagues, exchanging ideas and
               finding
               optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful
@@ -52,48 +70,48 @@
             </p>
           </div>
         </li>
-        <li class="item-about">
+        <li class="item-about ac">
           <div class="head-cv-about-container">
-            <h3 class="small-title-about">Role</h3>
-            <button type="button" class="btn-about" id="btn-role">
+            <h3 class="small-title-about ac-header">Role</h3>
+            <button type="button" class="btn-about ac-trigger" id="btn-role">
               <svg class="icon-about icon-close">
                 <use href="./img/about/icons-about.svg#icon-btn"></use>
               </svg>
             </button>
           </div>
-          <div class="text-cv-about-container">
+          <div class="text-cv-about-container ac-panel">
             <ul class="list-cv-about">
-              <li>
+              <li class="ac-text-about">
                 <p class="paragraph-about">Frontend development</p>
               </li>
-              <li>
+              <li class="ac-text-about">
                 <p class="paragraph-about">HeadlessCMS, Wordpress</p>
               </li>
-              <li>
+              <li class="ac-text-about">
                 <p class="paragraph-about">Blender(enjoy)</p>
               </li>
             </ul>
           </div>
         </li>
-        <li class="item-about">
+        <li class="item-about ac">
           <div class="head-cv-about-container">
-            <h3 class="small-title-about">Education</h3>
-            <button type="button" class="btn-about" id="btn-edu">
+            <h3 class="small-title-about ac-header">Education</h3>
+            <button type="button" class="btn-about ac-trigger" id="btn-edu">
               <svg class="icon-about icon-close">
                 <use href="./img/about/icons-about.svg#icon-btn"></use>
               </svg>
             </button>
           </div>
-          <div class="text-cv-about-container">
+          <div class="text-cv-about-container ac-panel">
             <ul class="list-cv-about">
-              <li>
+              <li class="ac-text-about">
                 <p class="paragraph-about">2018 - 2019 / Frontend Development Diploma, GoIT IT <br> School, New York</p>
               </li>
-              <li>
+              <li class="ac-text-about">
                 <p class="paragraph-about">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York
                 </p>
               </li>
-              <li>
+              <li class="ac-text-about">
                 <p class="paragraph-about">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
               </li>
             </ul>
@@ -101,33 +119,33 @@
         </li>
       </ul>
     </div>
-    <div class="skills-about-container swiper">
+    <div class="skills-about-container swiper-about">
       <ul class="list-skills-about swiper-wrapper">
-        <li class="item-skills-about red-skill swiper-slide" style="width: 200px; height: 200px;">
+        <li class="item-skills-about swiper-slide">
           <h3 class="title-skills-about">HTML/CSS</h3>
         </li>
-        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
+        <li class="item-skills-about swiper-slide">
           <h3 class="title-skills-about">JavaScript</h3>
         </li>
-        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
+        <li class="item-skills-about swiper-slide">
           <h3 class="title-skills-about">React</h3>
         </li>
-        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
+        <li class="item-skills-about swiper-slide">
           <h3 class="title-skills-about">Node.js</h3>
         </li>
-        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
+        <li class="item-skills-about swiper-slide">
           <h3 class="title-skills-about">React Native</h3>
         </li>
-        <li class="item-skills-about swiper-slide" style="width: 200px; height: 200px;">
+        <li class="item-skills-about swiper-slide">
           <h3 class="title-skills-about">Soft skills</h3>
         </li>
-        <li class="hide-desktop swiper-slide" style="width: 200px; height: 200px;">
-          <h3 class="title-skills-about hide-desktop">Hard skills</h3>
+        <li class="item-skills-about swiper-slide">
+          <h3 class="title-skills-about">Git</h3>
         </li>
       </ul>
       <button type="button" class="btn-arrow" id="arrow">
         <svg class="arrow-skills">
-          <use href="../img/about/icons-about.svg#icon-arrow"></use>
+          <use href="./img/about/icons-about.svg#icon-arrow"></use>
         </svg>
       </button>
     </div>

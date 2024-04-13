@@ -85,8 +85,8 @@ function initializeSwiper() {
   watchOverflow: true,
   slideToClickedSlide: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next-reviews',
+      prevEl: '.swiper-button-prev-reviews',
     },
   });
 }

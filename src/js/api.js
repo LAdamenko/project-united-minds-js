@@ -15,7 +15,7 @@ export function apiGet(){
 
 export function apiPost(data){
     const base_url = "https://portfolio-js.b.goit.study";
-    const end_point = "/api/footer";
+    const end_point = "/api/requests";
     const url = `${base_url}${end_point}`;
 
     return axios.post(url, data)

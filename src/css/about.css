@@ -47,6 +47,7 @@
 
 .img-about {
   border-radius: 24px;
+  width: 100%;
 }
 
 .list-about {
@@ -59,7 +60,7 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  ;
+  padding-bottom: 32px;
 }
 
 .head-cv-about-container {
@@ -73,26 +74,17 @@
   color: rgba(250, 250, 250, 0.4);
 
   margin-right: auto;
-  margin-bottom: 32px;
 }
 
 .text-cv-about-container {
   text-align: start;
-  padding: 12px 0 20px;
+  padding: 12px 0 0;
 }
 
 .paragraph-about {
   letter-spacing: -0.02em;
   color: #fafafa;
 }
-
-/* .ac-panel.accordion-second {
-  display: none;
-}
-
-.ac-panel.accordion-third {
-  display: none;
-} */
 
 .gap {
   margin-bottom: 32px;
@@ -113,20 +105,26 @@
   padding: 9px;
   width: 36px;
   height: 36px;
+  margin-bottom: 0;
 }
 
-.skills-about-container.swiper {
+.skills-about-container {
   display: flex;
+  margin: 0 auto;
+  width: 343px;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+  gap: 55px;
+  overflow: hidden;
 }
 
-.list-skills-about.swiper-wrapper {
+.skills-about-container .swiper-slide-active {
+  background-color: #ed3b44;
+}
+
+.list-skills-about {
   display: flex;
-  margin-right: auto;
-}
-
-.swiper-wrapper {
-  width: 100px;
 }
 
 .icon-close {
@@ -148,45 +146,22 @@
   transform: rotate(180deg);
 }
 
-.item-skills-about.swiper-slide {
-  width: 130px;
-  height: 130px;
+.list-skills-about .item-skills-about {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 
+  height: 130px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item-skills-about:hover {
-  background-color: #E0373F;
-}
-
-.item-skills-about:focus {
-  background-color: #E0373F;
 }
 
 .title-skills-about {
   text-align: center;
   letter-spacing: -0.02em;
   color: #fafafa;
-}
-
-.red-skill {
-  background-color: #ed3b44;
-  border: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.red-skill:hover {
-  background-color: #E0373F;
-}
-
-.red-skill:hover {
-  background-color: #E0373F;
 }
 
 .btn-arrow {
@@ -224,10 +199,32 @@
   display: none;
 }
 
-@media screen and (max-width: 767px) {
-  .swiper-slide.hide-mob {
-    display: none;
-  }
+.swiper-about .swiper-wrapper {
+  width: 343px;
+  overflow: hidden;
+}
+
+.ac .ac-panel {
+  overflow: hidden;
+  transition: height 250ms cubic-bezier(.4, 0, .2, 1), visibility 250ms cubic-bezier(.4, 0, .2, 1);
+}
+
+.btn-about:hover,
+.btn-about:active,
+.is-active .btn-about {
+  border-color: #000;
+  background-color: #E0373F;
+}
+
+.btn-about:hover .icon-about,
+.is-active .icon-about {
+  stroke: #000;
+}
+
+.is-active .small-title-about,
+.small-title-about:hover,
+.small-title-about:active {
+  color: #E0373F;
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -283,9 +280,14 @@
     gap: 32px;
   }
 
+  .skills-about-container {
+    width: 704px;
+    gap: 64px;
+  }
+
   .text-cv-about-container {
     text-align: start;
-    padding: 8px 0 32px;
+    padding: 8px 0 0;
   }
 
   .btn-about {
@@ -317,6 +319,16 @@
   .arrow-skills {
     width: 40px;
     height: 40px;
+  }
+
+  .swiper-about .swiper-wrapper {
+    width: 704px;
+    overflow: hidden;
+  }
+
+  .list-skills-about .item-skills-about {
+    height: 200px;
+    margin: 88px auto;
   }
 }
 
@@ -357,12 +369,17 @@
     gap: 32px;
   }
 
+  .skills-about-container {
+    width: 1312px;
+    gap: 72px;
+  }
+
   .text-cv-about-container {
     text-align: start;
     letter-spacing: -0.02em;
     color: #fafafa;
 
-    padding: 8px 68px 32px 696px;
+    padding: 8px 68px 0 696px;
   }
 
   .list-cv-about {
@@ -373,7 +390,6 @@
     padding: 10px;
     width: 40px;
     height: 40px;
-    margin-bottom: 32px;
   }
 
   .icon-close {
@@ -390,10 +406,11 @@
     max-width: 1312px;
   }
 
-  .item-skills-about {
+  .list-skills-about .item-skills-about {
     width: 200px;
     height: 200px;
     margin: 88px auto;
+    padding: 88px 52px;
   }
 
   .title-skills-about {
@@ -403,5 +420,10 @@
   .arrow-skills {
     width: 40px;
     height: 40px;
+  }
+
+  .swiper-about .swiper-wrapper {
+    width: 1376px;
+    overflow: hidden;
   }
 }
