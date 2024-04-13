@@ -3,7 +3,7 @@ const coverSection = document.querySelector(".covers-section");
 // Об'єкт налаштувань для Observer'а.
 const options = {
     root: null,
-    rootMargin: "270px",
+    rootMargin: "450px",
     threshold: 0.5,
 }
 // Колбек функція для Observer'а.

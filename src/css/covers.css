@@ -1,12 +1,5 @@
-body {
-  margin: 0;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 .covers-heading {
   display: none;
@@ -14,8 +7,6 @@ body {
 
 .covers-wrapper {
   max-width: 100%;
-  height: 100vh;
-  /* position: absolute; */
   right: -800px; 
   left: 0;
   overflow: hidden;
@@ -27,6 +18,8 @@ body {
 
 .covers-section {
   position: relative;
+  margin-bottom: 164px;
+  max-width: 1440px;
 }
 
 .covers-slide-list {
