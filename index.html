@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/project-united-minds-js/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-united-minds-js/assets/vendor-4e15793d.js">
     <link rel="stylesheet" href="/project-united-minds-js/assets/vendor-acd7e342.css">
-    <link rel="stylesheet" href="/project-united-minds-js/assets/index-50f5f141.css">
+    <link rel="stylesheet" href="/project-united-minds-js/assets/index-7b5bfd18.css">
   </head>
   <body>
     
@@ -456,15 +456,17 @@
     </div>
 
     <form id="contact-form">
-      <input
-        type="email"
-        id="email"
-        name="email"
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-        placeholder="clients@gmail.com"
-        required
-      />
-
+      <div class="validateEmail">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          placeholder="clients@gmail.com"
+          required
+        />
+        <div id="emailValidationMessage"></div>
+      </div>
       <textarea id="comment" name="comment" placeholder="comments"></textarea>
 
       <button type="submit" id="submit-btn">Send</button>
