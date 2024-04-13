@@ -2,8 +2,6 @@ import { apiPost } from './api.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contact-form');
-  const emailInput = document.getElementById('email');
-  const commentInput = document.getElementById('comment');
   const successModal = document.querySelector('[data-modal]');
   const closeModalButton = document.querySelector('[data-modal-close]');
 
@@ -50,3 +48,46 @@ document.addEventListener('DOMContentLoaded', function () {
     successModal.classList.add('is-hidden');
   }
 });
+
+const emailInput = document.getElementById('email');
+const textarea = document.getElementById('comment');
+const emailValidationMessage = document.getElementById(
+  'emailValidationMessage'
+);
+
+const originalBorderColor = emailInput.style.borderBottomColor;
+
+emailInput.addEventListener('input', validateEmail);
+textarea.addEventListener('input', truncateText);
+
+function validateEmail() {
+  const emailPattern = new RegExp(emailInput.pattern);
+  if (emailInput.value === '') {
+    emailInput.style.borderBottomColor = originalBorderColor;
+    emailValidationMessage.textContent = '';
+    return false;
+  }
+
+  if (!emailPattern.test(emailInput.value)) {
+    emailValidationMessage.textContent = 'Invalid email, try again';
+    emailValidationMessage.style.color = '#e74a3b';
+    emailInput.style.borderBottomColor = '#e74a3b';
+    // Почистимо попереднє повідомлення
+    return false; // Prevent form submission
+  }
+
+  emailValidationMessage.textContent = 'Success!';
+  emailValidationMessage.style.color = '#3cbc81';
+  emailInput.style.borderBottomColor = '#3cbc81';
+
+  return true; // Allow form submission
+}
+
+function truncateText() {
+  const maxLength = 100; // Максимальна довжина тексту
+  const currentLength = textarea.value.length;
+
+  if (currentLength > maxLength) {
+    textarea.value = textarea.value.substring(0, maxLength) + '...';
+  }
+}

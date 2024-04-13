@@ -47,6 +47,7 @@
 
 .img-about {
   border-radius: 24px;
+  width: 100%;
 }
 
 .list-about {
@@ -109,7 +110,8 @@
 
 .skills-about-container {
   display: flex;
-  width: 1312px;
+  margin: 0 auto;
+  width: 343px;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -123,10 +125,6 @@
 
 .list-skills-about {
   display: flex;
-}
-
-.skills-about-container .swiper-wrapper {
-  width: 100px;
 }
 
 .icon-close {
@@ -202,7 +200,7 @@
 }
 
 .swiper-about .swiper-wrapper {
-  width: 260px;
+  width: 343px;
   overflow: hidden;
 }
 
@@ -283,6 +281,7 @@
   }
 
   .skills-about-container {
+    width: 704px;
     gap: 64px;
   }
 
@@ -323,7 +322,7 @@
   }
 
   .swiper-about .swiper-wrapper {
-    width: 600px;
+    width: 704px;
     overflow: hidden;
   }
 
@@ -371,6 +370,7 @@
   }
 
   .skills-about-container {
+    width: 1312px;
     gap: 72px;
   }
 
@@ -423,7 +423,7 @@
   }
 
   .swiper-about .swiper-wrapper {
-    width: 1200px;
+    width: 1376px;
     overflow: hidden;
   }
 }
