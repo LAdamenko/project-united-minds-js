@@ -1,41 +1,11 @@
-body {
-  font-family: 'Inter Tight', sans-serif;
-  background-color: #1c1d20;
-}
-
-
-
-@media screen and (min-width: 768px) {
-  .benefits {
-    padding: 35px 0;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .benefits {
-    padding: 100px 0;
-  }
-}
-
 .benefits-container {
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 32px;
 }
 
-@media screen and (min-width: 768px) {
-  .benefits-container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-}
-
 @media screen and (min-width: 1440px) {
   .benefits-container {
-    max-width: 1440px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px;
   }
