@@ -3,9 +3,10 @@ const coverSection = document.querySelector(".covers-section");
 // Об'єкт налаштувань для Observer'а.
 const options = {
     root: null,
-    rootMargin: "450px",
+    rootMargin: "500px",
     threshold: 0.5,
 }
+
 // Колбек функція для Observer'а.
 const observeFunc = (enteries) => {
     // Observer створює масив входженнь таргета в зону спостереждення
@@ -15,10 +16,11 @@ const observeFunc = (enteries) => {
           startAnimation();
         //   Коли виходить анімацію зупиняємо
       } else {
-          stopAnimation();
+            stopAnimation();
       }
     });
 }
+
 // Функція зупинки анімації
 function stopAnimation() {
     const slideItem = document.querySelectorAll(".covers-slide");
@@ -34,4 +36,5 @@ function startAnimation() {
 const observer = new IntersectionObserver(observeFunc, options);
 // Передаємо секцію в якості таргета для спостереження 
 observer.observe(coverSection)
+
 
