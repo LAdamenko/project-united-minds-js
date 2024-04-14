@@ -195,10 +195,6 @@
   margin: 0 auto;
 }
 
-.swiper-slide.hide-desktop {
-  display: none;
-}
-
 .swiper-about .swiper-wrapper {
   width: 343px;
   overflow: hidden;
@@ -242,10 +238,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-
-  .swiper-slide.hide-tab {
-    display: none;
-  }
 
   .about {
     max-width: 768px;
@@ -419,7 +411,7 @@
   }
 
   .btn-arrow {
-    width: 40px;
+    width: 35px;
     height: 40px;
   }
 
