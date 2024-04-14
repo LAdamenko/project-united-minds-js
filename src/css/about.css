@@ -187,7 +187,7 @@
 .about {
   min-width: 320px;
   margin: 0 auto;
-  padding: 96px 10px 82px;
+  padding: 64px 10px 32px;
 }
 
 .container-about {
@@ -232,7 +232,7 @@
   .about {
     max-width: 375px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 96px 16px 82px;
   }
 
   .container-about {
@@ -250,7 +250,7 @@
   .about {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 64px 32px 48px;
   }
 
   .container-about {
@@ -336,6 +336,7 @@
   .about {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 96px 32px 82px;
   }
 
   .container-about {
