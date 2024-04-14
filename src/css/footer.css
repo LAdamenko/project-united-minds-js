@@ -1,9 +1,10 @@
 .container-footer {
+  margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
 }
 .footer-section {
-  padding: 32px 16px;
+  padding: 64px 16px;
 }
 .luck {
   max-width: 270px;
@@ -268,8 +269,8 @@ body.modal-open {
     max-width: 704px;
   }
   .footer-section {
-    padding-top: 80px;
-    padding-bottom: 169px;
+    padding-top: 128px;
+    padding-bottom: 128px;
   }
   .luck {
     max-width: 550px;
@@ -326,6 +327,10 @@ body.modal-open {
 
 /* Для настільних комп'ютерів */
 @media only screen and (min-width: 1440px) {
+  .footer-section {
+    padding-top: 162px;
+    padding-bottom: 162px;
+  }
   .container-footer {
     max-width: 1050px;
   }
