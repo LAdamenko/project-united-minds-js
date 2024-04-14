@@ -40,40 +40,42 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const swiper = new Swiper('.swiper-about', {
-  modules: [Keyboard, Mousewheel],
-  cssMode: true,
-  preventInteractionOnTransition: true,
-  speed: 400,
-  spaceBetween: 0,
-  allowTouchMove: true,
-  loop: true,
-  slideToClickedSlide: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-  mousewheel: {
-    enabled: true,
-  },
-  slidesPerView: 2,
-  width: 260,
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-      width: 600
+document.addEventListener("DOMContentLoaded", () => {
+  const swiper = new Swiper('.swiper-about', {
+    modules: [Keyboard, Mousewheel],
+    cssMode: true,
+    preventInteractionOnTransition: true,
+    speed: 400,
+    spaceBetween: 0,
+    allowTouchMove: true,
+    loop: true,
+    slideToClickedSlide: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
     },
-    1440: {
-      slidesPerView: 6,
-      width: 1200
+    mousewheel: {
+      enabled: true,
+    },
+    slidesPerView: 2,
+    width: 260,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        width: 600
+      },
+      1440: {
+        slidesPerView: 6,
+        width: 1200
+      }
     }
-  }
-});
+  });
 
-const swipeBtn = document.querySelector('.btn-arrow');
+  const swipeBtn = document.querySelector('.btn-arrow');
 
-swipeBtn.addEventListener("click", () => {
-  swiper.slideNext();
-  swiper.updateSize();
-  swiper.updateSlides();
-});
+  swipeBtn.addEventListener("click", () => {
+    swiper.slideNext();
+    swiper.updateSize();
+    swiper.updateSlides();
+  });
+})
