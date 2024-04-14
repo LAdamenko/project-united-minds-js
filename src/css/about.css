@@ -174,8 +174,8 @@
 }
 
 .arrow-skills {
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
   fill: none;
   stroke: #3B3B3B;
   stroke-width: 2px;
@@ -187,7 +187,7 @@
 .about {
   min-width: 320px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 96px 10px 82px;
 }
 
 .container-about {
@@ -230,13 +230,13 @@
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
   .about {
-    min-width: 375px;
+    max-width: 375px;
     margin: 0 auto;
     padding: 0 16px;
   }
 
   .container-about {
-    min-width: 343px;
+    max-width: 343px;
     margin: 0 auto;
   }
 }
@@ -248,13 +248,13 @@
   }
 
   .about {
-    min-width: 768px;
+    max-width: 768px;
     margin: 0 auto;
     padding: 0 32px;
   }
 
   .container-about {
-    min-width: 704px;
+    max-width: 704px;
     margin: 0 auto;
   }
 
@@ -415,6 +415,11 @@
 
   .title-skills-about {
     font-size: 20px;
+  }
+
+  .btn-arrow {
+    width: 40px;
+    height: 40px;
   }
 
   .arrow-skills {
