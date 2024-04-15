@@ -92,6 +92,36 @@
   background-color: #e0373f;
 }
 
+@keyframes socialMediaMarkup {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 15px 5px #e0373f;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+.for-animation {
+  animation: socialMediaMarkup 6s infinite;
+}
+.n-one {
+  animation-delay: 0.75s;
+}
+.n-two {
+  animation-delay: 1.5s;
+}
+.n-three {
+  animation-delay: 2.25s;
+}
+.n-four {
+  animation-delay: 2.99s;
+}
+.n-five {
+  animation-delay: 3.74s;
+}
 
 /* ---------------------------------------------TABLET--------------------------------------------------*/
 

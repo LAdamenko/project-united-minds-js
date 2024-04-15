@@ -10,20 +10,24 @@ const tabletAndDesktopMenuLink = document.querySelector(".menu-link");
 
 mobileMenuBtn.addEventListener("click", () => {
     mobileMenu.classList.add("is-open");
+    document.body.style.overflow = 'hidden';
 })
 
 mobileMenuCloseBtn.addEventListener("click", () => {
     mobileMenu.classList.remove("is-open");
+    document.body.style.overflow = 'auto';
 })
 
 mobileNavigation.forEach(item => {
     item.addEventListener("click", () => {
         mobileMenu.classList.remove("is-open");
+        document.body.style.overflow = 'auto';
     });
 });
 
 mobileOrderBtn.addEventListener("click", () => {
     mobileMenu.classList.remove("is-open");
+    document.body.style.overflow = 'auto';
 });
 
 

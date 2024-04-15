@@ -159,9 +159,24 @@
     letter-spacing: -0.02em;
     font-size: 14px;
     align-content: center;
+    outline: transparent;
+    border-color: transparent;
+    animation: buttonMarkup 6s infinite;
   }
 
-  .mobile-order-button {
+  @keyframes buttonMarkup {
+    0% {
+      box-shadow: 0 0 10px #e0373f;
+    }
+    50% {
+      box-shadow: 0 0 15px 3px #000000;
+    }
+    100% {
+      box-shadow: 0 0 10px #e0373f;
+    }
+  }
+
+  .mobile-order-button:active {
     background-color: #e0373f;
   }
 }
@@ -199,8 +214,22 @@
     background-color: #ed3b44;
     letter-spacing: -0.02em;
     font-size: 15px;
+    outline: transparent;
+    border-color: transparent;
+    animation: buttonMarkup 6s infinite;
   }
 
+  @keyframes buttonMarkup {
+    0% {
+      box-shadow: 0 0 10px #e0373f;
+    }
+    50% {
+      box-shadow: 0 0 15px 3px #000000;
+    }
+    100% {
+      box-shadow: 0 0 10px #e0373f;
+    }
+  }
 
   .tablet-and-desktop-menu-navigation-wrapper {
     display: none;
