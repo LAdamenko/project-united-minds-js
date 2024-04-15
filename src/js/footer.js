@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contact-form');
   const successModal = document.querySelector('[data-modal]');
   const closeModalButton = document.querySelector('[data-modal-close]');
-
+  const emailInput = document.getElementById('email');
+  const originalBorderColor = emailInput.style.borderBottomColor;
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -17,10 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // Display success modal and clear form
         successModal.classList.remove('is-hidden');
         form.reset();
+        emailInput.style.borderBottomColor = originalBorderColor;
+        emailValidationMessage.classList.add('hidden-container-for-footer');
       })
       .catch(error => {
         // Log error to console
-        console.error(error);
       });
   });
 
@@ -63,19 +65,20 @@ textarea.addEventListener('input', truncateText);
 function validateEmail() {
   const emailPattern = new RegExp(emailInput.pattern);
   if (emailInput.value === '') {
+    emailValidationMessage.classList.add('hidden-container-for-footer');
     emailInput.style.borderBottomColor = originalBorderColor;
-    emailValidationMessage.textContent = '';
     return false;
   }
 
   if (!emailPattern.test(emailInput.value)) {
+    emailValidationMessage.classList.remove('hidden-container-for-footer');
     emailValidationMessage.textContent = 'Invalid email, try again';
     emailValidationMessage.style.color = '#e74a3b';
     emailInput.style.borderBottomColor = '#e74a3b';
     // Почистимо попереднє повідомлення
     return false; // Prevent form submission
   }
-
+  emailValidationMessage.classList.remove('hidden-container-for-footer');
   emailValidationMessage.textContent = 'Success!';
   emailValidationMessage.style.color = '#3cbc81';
   emailInput.style.borderBottomColor = '#3cbc81';

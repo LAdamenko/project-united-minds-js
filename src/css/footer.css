@@ -41,6 +41,9 @@
   position: relative;
   margin-bottom: 10px;
 }
+.hidden-container-for-footer {
+  display: none;
+}
 #emailValidationMessage {
   position: absolute;
   top: 45px;
@@ -126,7 +129,6 @@
   border: none;
   outline: none;
   stroke: #e0373f;
-  
 
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
