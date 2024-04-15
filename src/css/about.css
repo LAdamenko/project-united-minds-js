@@ -90,8 +90,8 @@
   margin-bottom: 32px;
 }
 
-.list-cv-about {
-  gap: 10px;
+.ac-text-about {
+  margin-bottom: 10px;
 }
 
 .btn-about {
@@ -350,8 +350,13 @@
   }
 
   .title-about {
+    width: 570px;
     font-size: 38px;
     line-height: 1.05263;
+  }
+
+  .paragraph-about {
+    width: 612px;
   }
 
   .text-about-container {

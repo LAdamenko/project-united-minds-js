@@ -125,6 +125,8 @@
   background-color: #ed3b44;
   border: none;
   outline: none;
+  stroke: #e0373f;
+  
 
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
@@ -132,7 +134,7 @@
   letter-spacing: -0.02em;
   color: #fafafa;
 
-  transition-property: background-color;
+  transition-property: background-color, box-shadow;
   transition-duration: 500ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -140,6 +142,7 @@
 #submit-btn:hover,
 #submit-btn:focus {
   background-color: #e0373f;
+  box-shadow: 0 0 15px 1px #e0373f;
 }
 .footer-contacts {
   display: flex;
