@@ -8,7 +8,11 @@
     min-width: 320px;
     max-width: 375px;
     margin: auto;
-    padding: 32px 16px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 17px;
 
 }
 
@@ -45,6 +49,7 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 12px;
+    padding-bottom: 15px;
 }
 
 .swiper-button-prev-reviews,
@@ -119,7 +124,7 @@
 .swiper-button-next-reviews:hover {
     border: 1px solid #e0373f;
     stroke: #e0373f;
-
+    box-shadow: 0 0 15px 1px #e0373f;
 }
 
 .swiper-navigation .swiper-button-disabled {
@@ -134,8 +139,12 @@
 @media screen and (min-width: 768px) {
     .reviews-section {
         width: 768px;
-        padding: 48px 32px;
+
         max-width: none;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 48px;
+        padding-bottom: 33px;
     }
 
     .swiper-container {
@@ -145,6 +154,7 @@
 
     .swiper-navigation {
         gap: 20px;
+        padding-bottom: 15px;
     }
 
     .swiper-button-prev-reviews,
@@ -170,7 +180,10 @@
     .reviews-section {
         width: 1440px;
         margin: auto;
-        padding: 82px 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 82px;
+        padding-bottom: 67px;
     }
 
     .swiper-container {
@@ -179,6 +192,7 @@
 
     .swiper-navigation {
         gap: 20px;
+        padding-bottom: 15px;
     }
 
     /* .swiper-button-prev-reviews,
