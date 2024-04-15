@@ -21,10 +21,14 @@
   bottom: 20px;
   right: 20px;
   z-index: 99;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
   background-color: #ED3B44;
   color: #fff;
   border: none;
-  border-radius: 100px;
+  border-radius: 60px;
   padding: 10px;
   cursor: pointer;
   stroke: #e0373f;
