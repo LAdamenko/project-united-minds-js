@@ -27,6 +27,7 @@ mobileNavigation.forEach(item => {
 
 mobileOrderBtn.addEventListener("click", () => {
     mobileMenu.classList.remove("is-open");
+    document.body.style.overflow = 'auto';
 });
 
 
