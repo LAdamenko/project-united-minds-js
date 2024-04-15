@@ -38,4 +38,5 @@ tabletAndDesktopMenuLink.addEventListener("click", (event) => {
     } else {
         tabletAndDesktopMenu.style.display = 'none';
     }
+    
 })
