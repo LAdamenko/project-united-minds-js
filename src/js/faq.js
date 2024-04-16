@@ -1,1 +1,14 @@
-import Accordion from "accordion-js"; new Accordion(".faq-list", { duration: 400, showOne: !0, showMultiple: !0, onToggle: function (o) { const s = o.target.closest(".qwestions"); s && s.classList.toggle("is-active") } });
+import Accordion from 'accordion-js';
+
+
+new Accordion('.faq-list', {
+    duration: 400,
+    showOne: true,
+    showMultiple: true,
+    onToggle: function (event) {
+        const button = event.target.closest('.qwestions');
+        if (button) {
+            button.classList.toggle('is-active');
+        }
+    }
+});

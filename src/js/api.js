@@ -1,1 +1,32 @@
-import axios from "axios"; import iziToast from "izitoast"; import "izitoast/dist/css/iziToast.min.css"; const baseURL = "https://portfolio-js.b.goit.study"; export function apiGet() { const t = `${baseURL}/api/reviews`; return axios.get(t).then((t => t.data)).catch(handleError) } export function apiPost(t) { const o = `${baseURL}/api/requests`; return axios.post(o, t).then((t => t.data)).catch(handleError) } function handleError(t) { throw iziToast.error({ title: "Error!", message: "Sorry, something went wrong. Please try again.", position: "topRight" }), t }
+import axios from "axios";
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
+const baseURL = "https://portfolio-js.b.goit.study";
+
+export function apiGet() {
+    const end_point = "/api/reviews";
+    const url = `${baseURL}${end_point}`;
+
+    return axios.get(url)
+        .then(response => response.data)
+        .catch(handleError);
+}
+
+export function apiPost(data) {
+    const end_point = "/api/requests";
+    const url = `${baseURL}${end_point}`;
+
+    return axios.post(url, data)
+        .then(response => response.data)
+        .catch(handleError);
+}
+
+function handleError(error) {
+    iziToast.error({
+        title: 'Error!',
+        message: 'Sorry, something went wrong. Please try again.',
+        position: 'topRight',
+    });
+    throw error;
+}
