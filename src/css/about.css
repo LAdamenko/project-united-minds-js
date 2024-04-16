@@ -400,10 +400,6 @@
     height: 12px;
   }
 
-  .skills-about-container {
-    max-width: 1312px;
-  }
-
   .list-skills-about .item-skills-about {
     width: 200px;
     height: 200px;
@@ -416,13 +412,18 @@
   }
 
   .btn-arrow {
-    width: 35px;
+    width: 39px;
     height: 40px;
   }
 
   .arrow-skills {
     width: 40px;
     height: 40px;
+  }
+
+  .arrow-skills:hover,
+  .arrow-skills:focus {
+    stroke: #E0373F;
   }
 
   .swiper-about .swiper-wrapper {
