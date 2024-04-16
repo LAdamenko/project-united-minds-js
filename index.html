@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/project-united-minds-js/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-united-minds-js/assets/vendor-4e15793d.js">
     <link rel="stylesheet" href="/project-united-minds-js/assets/vendor-acd7e342.css">
-    <link rel="stylesheet" href="/project-united-minds-js/assets/index-a38e1d77.css">
+    <link rel="stylesheet" href="/project-united-minds-js/assets/index-95d1f9a1.css">
   </head>
   <body>
     <header class="page-header">
@@ -773,13 +773,13 @@
           class="hidden-container-for-footer"
         ></div>
       </div>
-      <textarea
-        id="comment"
-        name="comment"
-        placeholder="comments"
-        required
-      ></textarea>
-
+      <div class="validateComment">
+        <textarea id="comment" name="comment" placeholder="comments"></textarea>
+        <div
+          id="CommentValidationMessage"
+          class="hidden-container-for-footer"
+        ></div>
+      </div>
       <button type="submit" id="submit-btn">Send</button>
     </form>
 
