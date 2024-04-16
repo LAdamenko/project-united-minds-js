@@ -49,6 +49,16 @@
   top: 45px;
   left: 5px;
 }
+.validateComment {
+  max-height: 45px;
+  position: relative;
+  margin-bottom: 10px;
+}
+#CommentValidationMessage {
+  position: absolute;
+  top: 45px;
+  left: 5px;
+}
 #email {
   min-height: 45px;
   width: 100%;
@@ -107,6 +117,10 @@
   transition-property: border;
   transition-duration: 500ms;
   animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  white-space: nowrap; /* Заборонити перенесення тексту на новий рядок */
+  overflow: hidden; /* Заборонити відображення більшого тексту, ніж вміщується у вікні */
+  text-overflow: ellipsis;
 }
 
 #comment:hover,
@@ -291,6 +305,9 @@ body.modal-open {
     font-size: 64px;
   }
   .validateEmail {
+    margin-bottom: 0;
+  }
+  .validateComment {
     margin-bottom: 0;
   }
   #contact-form {

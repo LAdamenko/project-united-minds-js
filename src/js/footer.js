@@ -1,13 +1,25 @@
 import { apiPost } from './api.js';
 
+const form = document.getElementById('contact-form');
+const emailInput = document.getElementById('email');
+const textarea = document.getElementById('comment');
+
+const emailValidationMessage = document.getElementById(
+  'emailValidationMessage'
+);
+const commentValidationMessage = document.getElementById(
+  'CommentValidationMessage'
+);
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('contact-form');
   const successModal = document.querySelector('[data-modal]');
   const closeModalButton = document.querySelector('[data-modal-close]');
-  const emailInput = document.getElementById('email');
   const originalBorderColor = emailInput.style.borderBottomColor;
   form.addEventListener('submit', function (event) {
     event.preventDefault();
+
+    if (!validateComment()) {
+      return; // if comment is not valid, stop form submission
+    }
 
     const formData = new FormData(form);
     const email = formData.get('email');
@@ -20,6 +32,11 @@ document.addEventListener('DOMContentLoaded', function () {
         form.reset();
         emailInput.style.borderBottomColor = originalBorderColor;
         emailValidationMessage.classList.add('hidden-container-for-footer');
+        emailInput.style.borderBottomColor = originalBorderColor;
+
+        commentValidationMessage.classList.add('hidden-container-for-footer');
+        textarea.style.borderBottomColor = originalBorderColor;
+        textarea.value = '';
       })
       .catch(error => {
         // Log error to console
@@ -51,16 +68,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-const emailInput = document.getElementById('email');
-const textarea = document.getElementById('comment');
-const emailValidationMessage = document.getElementById(
-  'emailValidationMessage'
-);
-
 const originalBorderColor = emailInput.style.borderBottomColor;
 
 emailInput.addEventListener('input', validateEmail);
-textarea.addEventListener('input', truncateText);
+
+// textarea.addEventListener('input', truncateText);
 
 function validateEmail() {
   const emailPattern = new RegExp(emailInput.pattern);
@@ -86,11 +98,51 @@ function validateEmail() {
   return true; // Allow form submission
 }
 
+function validateComment() {
+  if (textarea.value.trim() === '' || textarea.value === null) {
+    commentValidationMessage.classList.remove('hidden-container-for-footer');
+    commentValidationMessage.textContent = 'Please, type somesing';
+    commentValidationMessage.style.color = '#DAA520';
+    textarea.style.borderBottomColor = '#DAA520';
+    return false;
+  } else return true;
+}
+
+let originalText = ''; // Змінна для збереження оригінального тексту
+let maxLength = 0; // Змінна для збереження максимальної довжини тексту
+
+function updateMaxLength() {
+  const inputFieldWidth = document.getElementById('comment').offsetWidth;
+  maxLength = Math.floor(inputFieldWidth / 8); // Визначити максимальну довжину тексту (приблизно 8px на символ)
+}
+
 function truncateText() {
-  const maxLength = 100; // Максимальна довжина тексту
   const currentLength = textarea.value.length;
 
   if (currentLength > maxLength) {
-    textarea.value = textarea.value.substring(0, maxLength) + '...';
+    // Зберігаємо оригінальний текст перед обрізанням
+    originalText = textarea.value;
+    // Обрізаємо текст і додаємо місце для трьох крапок
+    textarea.value = originalText.substring(0, maxLength) + '...';
+  } else {
+    // Якщо текст не потрібно обрізати, зберігаємо оригінальний текст
+    originalText = textarea.value;
   }
 }
+// Оновлення максимальної довжини тексту при завантаженні сторінки та зміні розміру вікна
+window.addEventListener('load', function () {
+  updateMaxLength();
+});
+
+window.addEventListener('resize', updateMaxLength);
+
+// Подія, яка викликається при виході з поля форми
+textarea.addEventListener('blur', function () {
+  truncateText(); // Викликаємо функцію обрізання тексту
+});
+
+// Подія, яка викликається при фокусуванні на полі вводу
+textarea.addEventListener('focus', function () {
+  // Повертаємо оригінальний текст
+  textarea.value = originalText;
+});
