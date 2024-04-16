@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         commentValidationMessage.classList.add('hidden-container-for-footer');
         textarea.style.borderBottomColor = originalBorderColor;
         textarea.value = '';
+        originalText = '';
       })
       .catch(error => {
         // Log error to console
