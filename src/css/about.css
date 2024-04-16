@@ -223,6 +223,11 @@
   color: #E0373F;
 }
 
+.arrow-skills:hover,
+.arrow-skills:focus {
+  stroke: #E0373F;
+}
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
   .about {
@@ -320,7 +325,7 @@
 
   .list-skills-about .item-skills-about {
     height: 200px;
-    margin: 88px auto;
+    padding: 88px auto;
   }
 }
 
@@ -400,15 +405,10 @@
     height: 12px;
   }
 
-  .skills-about-container {
-    max-width: 1312px;
-  }
-
   .list-skills-about .item-skills-about {
     width: 200px;
     height: 200px;
-    margin: 88px auto;
-    padding: 88px 52px;
+    padding: 88px auto;
   }
 
   .title-skills-about {
@@ -416,7 +416,7 @@
   }
 
   .btn-arrow {
-    width: 35px;
+    width: 39px;
     height: 40px;
   }
 
