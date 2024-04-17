@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-united-minds-js/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/project-united-minds-js/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-united-minds-js</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+    <style>*,::after,::before{box-sizing:border-box}html{font-family:system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';line-height:1.15;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4}body{margin:0}button{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button{text-transform:none}button{-webkit-appearance:button}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:ButtonText dotted 1px}:-moz-ui-invalid{box-shadow:none}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}#scrollToTopBtn{display:none;position:fixed;bottom:20px;right:20px;z-index:99;width:48px;height:48px;justify-content:center;align-items:center;background-color:#ed3b44;color:#fff;border:none;border-radius:60px;padding:10px;stroke:#e0373f;box-shadow:0 0 15px 1px #e0373f}.icon-to-top{width:12px;height:12px;fill:none;stroke:#fafafa;stroke-width:2px;border:none;transform:rotate(180deg)}</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" media="print" onload="this.media='all'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="data:text/css;base64,LyoqCiAgfD09PT09PT09PT09PT09PT09PT09PT09PT09PT0KICB8IGluY2x1ZGUgY3NzIHBhcnRpYWxzIHdpdGgKICB8IGRlZmF1bHQgQGltcG9ydCB1cmwoKQogIHw9PT09PT09PT09PT09PT09PT09PT09PT09PT09CiovCkBpbXBvcnQgdXJsKCcuL3Jlc2V0LmNzcycpOwpAaW1wb3J0IHVybCgnLi9oZWFkZXIuY3NzJyk7CkBpbXBvcnQgdXJsKCcuL2hlcm8uY3NzJyk7CkBpbXBvcnQgdXJsKCcuL2Fib3V0LmNzcycpOwpAaW1wb3J0IHVybCgnLi9iZW5lZml0cy5jc3MnKTsKQGltcG9ydCB1cmwoJy4vcHJvamVjdHMuY3NzJyk7CkBpbXBvcnQgdXJsKCcuL2ZhcS5jc3MnKTsKQGltcG9ydCB1cmwoJy4vY292ZXJzLmNzcycpOwpAaW1wb3J0IHVybCgnLi9yZXZpZXdzLmNzcycpOwpAaW1wb3J0IHVybCgnLi9mb290ZXIuY3NzJyk7Cgojc2Nyb2xsVG9Ub3BCdG4gewogIGRpc3BsYXk6IG5vbmU7CiAgcG9zaXRpb246IGZpeGVkOwogIGJvdHRvbTogMjBweDsKICByaWdodDogMjBweDsKICB6LWluZGV4OiA5OTsKICB3aWR0aDogNDhweDsKICBoZWlnaHQ6IDQ4cHg7CiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7CiAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICBiYWNrZ3JvdW5kLWNvbG9yOiAjRUQzQjQ0OwogIGNvbG9yOiAjZmZmOwogIGJvcmRlcjogbm9uZTsKICBib3JkZXItcmFkaXVzOiA2MHB4OwogIHBhZGRpbmc6IDEwcHg7CiAgY3Vyc29yOiBwb2ludGVyOwogIHN0cm9rZTogI2UwMzczZjsKICBib3gtc2hhZG93OiAwIDAgMTVweCAxcHggI2UwMzczZjsKfQoKI3Njcm9sbFRvVG9wQnRuOmhvdmVyIHsKICBiYWNrZ3JvdW5kLWNvbG9yOiAjRTAzNzNGOwp9CgouaWNvbi10by10b3AgewogIHdpZHRoOiAxMnB4OwogICAgaGVpZ2h0OiAxMnB4OwogICAgZmlsbDogbm9uZTsKICAgIHN0cm9rZTogI2ZhZmFmYTsKICAgIHN0cm9rZS13aWR0aDogMnB4OwogICAgYm9yZGVyOiBub25lOwogICAgdHJhbnNmb3JtOiByb3RhdGUoMTgwZGVnKTsKfQ==" media="print" onload="this.media='all'">
     <script type="module" crossorigin src="/project-united-minds-js/assets/vendor-4e15793d.js"></script>
     <script type="module" crossorigin src="/project-united-minds-js/assets/main-872006f9.js"></script>
-    <link rel="stylesheet" href="/project-united-minds-js/assets/main-72d0c83d.css">
     <link rel="stylesheet" href="/project-united-minds-js/assets/vendor-acd7e342.css">
+    <link rel="stylesheet" href="/project-united-minds-js/assets/main-72d0c83d.css">
   </head>
   <body>
     <header class="page-header">
@@ -834,5 +834,14 @@
 </section>
 
     
+  
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"></noscript>
+
+  
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"></noscript>
+
+  
+  <noscript></noscript>
+
   </body>
 </html>
